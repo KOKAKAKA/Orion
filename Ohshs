@@ -1348,7 +1348,7 @@ RunService.PostSimulation:Connect(function()
 
 	local ping_threshold = math.clamp(Player.Entity.properties.ping / 10, 10, 16)
 
-	local spam_accuracity = (math.min(moveAmount + (ball_properties.speed / 8.4), (150 + moveAmount)) + ping_threshold) * 1.1
+	local spam_accuracity = (math.min(moveAmount + (ball_properties.speed / 8.4), (150 + moveAmount)) + ping_threshold) * 0.95
 	local parry_accuracity = ball_properties.maximum_speed / 10.8 + ping_threshold
 	local player_properties = Player.Entity.properties
 
