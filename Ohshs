@@ -1362,7 +1362,7 @@ RunService.PostSimulation:Connect(function()
 
 	end
 
-	ball_properties.spam_range = ping_threshold + ball_properties.speed / 2.245
+	ball_properties.spam_range = ping_threshold + ball_properties.speed / 2.45
 	ball_properties.parry_range = (ping_threshold + ball_properties.speed) * 1.52 / math.pi
 
 	if Player.Entity.properties.sword == 'Titan Blade' then
