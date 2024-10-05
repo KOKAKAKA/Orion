@@ -1266,7 +1266,7 @@ print("modules by speed x")
     
         ball_properties.is_curved = AutoParry.is_curved()
     
-        local baseMoveAmount = 0.48
+        local baseMoveAmount = 0.50
         local moveAmount = baseMoveAmount * (1 / (AutoParry.entity_properties.distance + 0.01)) * 1000
     
         local ping_threshold = math.clamp(Player.Entity.properties.ping / 10, 10, 16)
@@ -1285,8 +1285,8 @@ print("modules by speed x")
     
         end
     
-        ball_properties.spam_range = ping_threshold + ball_properties.speed / 2.38
-        ball_properties.parry_range = (ping_threshold + ball_properties.speed) * 1.53 / math.pi
+        ball_properties.spam_range = ping_threshold + ball_properties.speed / 2.4
+        ball_properties.parry_range = (ping_threshold + ball_properties.speed) * 1.4 / math.pi
     
         if Player.Entity.properties.sword == 'Titan Blade' then
             ball_properties.parry_range += 11
